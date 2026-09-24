@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HeroBackground from "./HeroBackground";
 import ScrollReveal from "./ScrollReveal";
 
@@ -298,9 +299,9 @@ export default function Home() {
                 <span>OHLCV</span>
               </div>
 
-              <a className="projectLink" href="/projects/stockai">
+              <Link className="projectLink" href="/projects/stockai">
                 View Case Study <span>↗</span>
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -329,9 +330,9 @@ export default function Home() {
                 <span>Next.js</span>
               </div>
 
-              <a className="projectLink" href="/projects/mealpilot">
+              <Link className="projectLink" href="/projects/mealpilot">
                 Explore Project <span>↗</span>
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -361,9 +362,9 @@ export default function Home() {
                 <span>Python</span>
               </div>
 
-              <a className="projectLink" href="/projects/data-pipeline">
+              <Link className="projectLink" href="/projects/data-pipeline">
                 Explore Project <span>↗</span>
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -392,9 +393,9 @@ export default function Home() {
                 <span>Python</span>
               </div>
 
-              <a className="projectLink" href="/projects/campus-ai">
+              <Link className="projectLink" href="/projects/campus-ai">
                 Explore Project <span>↗</span>
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -425,9 +426,9 @@ export default function Home() {
                 <span>Excel</span>
               </div>
 
-              <a className="projectLink" href="/projects/bi-analytics">
+              <Link className="projectLink" href="/projects/bi-analytics">
                 Explore Project <span>↗</span>
-              </a>
+              </Link>
             </div>
           </article>
         </div>
@@ -698,7 +699,7 @@ export default function Home() {
           </a>
 
           <a
-            href="/Mary_Syamala_Resume.pdf"
+            href="/mary-portfolio/Mary_Syamala_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="contactLink"
