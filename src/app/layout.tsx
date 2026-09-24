@@ -12,10 +12,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://mary-portfolio-beta.vercel.app";
+const SITE_TITLE = "Mary Syamala | Data Engineer & Analytics";
+const SITE_DESCRIPTION =
+  "Portfolio of Mary Syamala — Data Engineer, Data Analyst, and AI Product Builder specializing in data engineering, analytics, cloud platforms, and AI-powered products.";
+
 export const metadata: Metadata = {
-  title: "Mary Syamala | Data Engineer & Analytics",
-  description:
-    "Portfolio of Mary Syamala — Data Engineer, Data Analyst, and AI Product Builder specializing in data engineering, analytics, cloud platforms, and AI-powered products.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: "Mary Syamala",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
