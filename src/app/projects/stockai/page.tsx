@@ -1,8 +1,9 @@
 import Link from "next/link";
+import StockAIArchitecture from "../../components/StockAIArchitecture";
 
 export default function StockAIPage() {
   return (
-    <main className="caseStudy">
+    <main id="main" className="caseStudy">
 
       {/* NAVIGATION */}
       <nav className="caseNav">
@@ -175,58 +176,89 @@ export default function StockAIPage() {
 
       </section>
 
-      {/* SOLUTION */}
+      {/* ARCHITECTURE */}
       <section className="caseSection">
 
-        <div className="caseSectionNumber">03 / THE SOLUTION</div>
+        <div className="caseSectionNumber">03 / ARCHITECTURE</div>
 
         <div className="solutionIntro">
 
           <h2>
-            One intelligence
+            How the system
             <br />
-            <span>pipeline.</span>
+            <span>is wired.</span>
           </h2>
 
           <p>
-            StockAI combines multiple data sources, transforms them into
-            machine-learning features, and produces structured insights that
-            can later be surfaced through a simple product interface.
+            Two research lanes — market data and financial news — are
+            transformed into features and evaluated together. What the
+            evaluation showed then shaped what actually shipped.
           </p>
 
         </div>
 
-        <div className="pipeline">
+        <StockAIArchitecture />
 
-          <div className="pipelineNode">
-            <span>01</span>
-            <strong>Market Data</strong>
-            <p>OHLCV</p>
+      </section>
+
+      {/* RESULT */}
+      <section className="caseSection">
+
+        <div className="caseSectionNumber">04 / THE RESULT</div>
+
+        <div className="caseTwoColumn">
+
+          <h2>
+            The models did not
+            <br />
+            <span>beat the market.</span>
+          </h2>
+
+          <div className="caseText">
+
+            <p className="caseLead">
+              Tested honestly, the price-movement models produced a null
+              result — no reliable predictive edge.
+            </p>
+
+            <p>
+              Across the engineered features, technical indicators, and
+              news-sentiment signals, evaluation and backtesting did not
+              show a dependable ability to predict future stock prices.
+            </p>
+
+            <p>
+              Rather than overfit to noise or report a misleading accuracy
+              number, the honest conclusion was that prediction wasn&apos;t
+              where the value was — the signal and news work was.
+            </p>
+
           </div>
 
-          <div className="pipelineArrow">→</div>
+        </div>
 
-          <div className="pipelineNode">
-            <span>02</span>
-            <strong>Features</strong>
-            <p>Technical + Event</p>
-          </div>
+      </section>
 
-          <div className="pipelineArrow">→</div>
+      {/* PIVOT */}
+      <section className="caseSection">
 
-          <div className="pipelineNode">
-            <span>03</span>
-            <strong>ML Models</strong>
-            <p>Pattern Learning</p>
-          </div>
+        <div className="caseSectionNumber">05 / THE PIVOT</div>
 
-          <div className="pipelineArrow">→</div>
+        <div className="solutionIntro">
 
-          <div className="pipelineNode">
-            <span>04</span>
-            <strong>Intelligence</strong>
-            <p>Signals + Context</p>
-          </div>
+          <h2>
+            From prediction
+            <br />
+            to <span>intelligence.</span>
+          </h2>
+
+          <p>
+            The evidence pointed to a more useful product. Instead of
+            forecasting prices, StockAI pivoted toward real-time news
+            intelligence — surfacing and contextualizing market-moving news
+            and sentiment so people can understand what is happening and
+            why, without a false promise of prediction.
+          </p>
 
         </div>
 
@@ -235,7 +267,7 @@ export default function StockAIPage() {
       {/* DATA */}
       <section className="caseSection">
 
-        <div className="caseSectionNumber">04 / DATA & FEATURES</div>
+        <div className="caseSectionNumber">06 / DATA & FEATURES</div>
 
         <div className="caseTwoColumn">
 
@@ -291,7 +323,7 @@ export default function StockAIPage() {
       {/* TECH */}
       <section className="caseSection">
 
-        <div className="caseSectionNumber">05 / TECHNOLOGY</div>
+        <div className="caseSectionNumber">07 / TECHNOLOGY</div>
 
         <h2 className="techHeading">
           Built with a modern

@@ -1,50 +1,42 @@
 import Link from "next/link";
-import HeroBackground from "./HeroBackground";
-import ScrollReveal from "./ScrollReveal";
+import HeroCanvas from "./components/HeroCanvas";
+import Navbar from "./components/Navbar";
+import ExperienceTimeline from "./components/ExperienceTimeline";
+import TiltCard from "./components/TiltCard";
+import SkillsViz from "./components/SkillsViz";
+import { Reveal, RevealStagger, RevealItem } from "./components/Reveal";
 
 export default function Home() {
   return (
-    <main>
-      <HeroBackground />
-      <ScrollReveal />
-      <nav className="navbar">
-        <a href="#" className="logo">
-          MS<span>.</span>
-        </a>
-
-        <div className="navLinks">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <a href="#contact" className="navButton">
-          Let&apos;s Talk
-        </a>
-      </nav>
+    <main id="main">
+      <HeroCanvas />
+      <Navbar />
 
       <section className="hero"  id="home">
-        <div className="heroLabel">
+        <Reveal as="div" className="heroLabel" mode="mount" delay={0.05} y={16}>
           <span className="greenDot"></span>
           DATA · ANALYTICS · AI
-        </div>
+        </Reveal>
 
-        <h1>
+        <Reveal as="h1" mode="mount" delay={0.15}>
           I turn data into
           <br />
           <span>useful products.</span>
-        </h1>
+        </Reveal>
 
-        <p className="heroDescription">
+        <Reveal
+          as="p"
+          className="heroDescription"
+          mode="mount"
+          delay={0.3}
+        >
           Hi, I&apos;m <strong>Mary Syamala</strong> — a Data Engineer,
           Business Analyst, and AI Product Builder focused on transforming
           complex data into reliable systems, actionable insights, and
           intelligent products.
-        </p>
+        </Reveal>
 
-        <div className="heroButtons">
+        <Reveal as="div" className="heroButtons" mode="mount" delay={0.42}>
           <a href="#projects" className="primaryButton">
             Explore My Work
             <span>→</span>
@@ -53,9 +45,9 @@ export default function Home() {
           <a href="#about" className="secondaryButton">
             About Me
           </a>
-        </div>
+        </Reveal>
 
-        <div className="heroBottom">
+        <Reveal as="div" className="heroBottom" mode="mount" delay={0.54}>
           <div>
             <span className="number">4+</span>
             <span className="statLabel">Years Experience</span>
@@ -75,22 +67,22 @@ export default function Home() {
             SCROLL TO EXPLORE
             <span>↓</span>
           </div>
-        </div>
+        </Reveal>
       </section>
       {/* ABOUT */}
       <section className="section" id="about">
-        <div className="sectionLabel">01 / ABOUT</div>
+        <Reveal as="div" className="sectionLabel" y={14}>01 / ABOUT</Reveal>
 
         <div className="aboutGrid">
-          <div>
+          <Reveal as="div">
             <h2>
               Data tells a story.
               <br />
               <span>I make it useful.</span>
             </h2>
-          </div>
+          </Reveal>
 
-          <div className="aboutContent">
+          <Reveal as="div" className="aboutContent" delay={0.1}>
             <p className="aboutLead">
               I&apos;m a data professional who enjoys working at the
               intersection of <strong>data, business, and technology.</strong>
@@ -131,15 +123,15 @@ export default function Home() {
                 <p>Data &amp; Analytics Opportunities</p>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* EXPERIENCE */}
       <section className="section" id="experience">
-        <div className="sectionLabel">02 / EXPERIENCE</div>
+        <Reveal as="div" className="sectionLabel" y={14}>02 / EXPERIENCE</Reveal>
 
-        <div className="experienceHeading">
+        <Reveal as="div" className="experienceHeading">
           <h2>
             Experience that
             <br />
@@ -150,66 +142,15 @@ export default function Home() {
             From business requirements to data pipelines and analytics,
             I&apos;ve worked across the data lifecycle.
           </p>
-        </div>
+        </Reveal>
 
-        <div className="experienceList">
-          <div className="experienceItem">
-            <div className="experienceYear">2026 — PRESENT</div>
-
-            <div className="experienceRole">
-              <h3>Data Engineer</h3>
-              <p>Symplore</p>
-            </div>
-
-            <p className="experienceText">
-              Building ETL/ELT pipelines, API integrations, SQL and Python
-              transformations, data-quality processes, and analytics-ready
-              datasets across cloud data environments.
-            </p>
-
-            <span className="experienceNumber">01</span>
-          </div>
-
-          <div className="experienceItem">
-            <div className="experienceYear">2025 — 2026</div>
-
-            <div className="experienceRole">
-              <h3>Data Engineer</h3>
-              <p>Tech Intuition</p>
-            </div>
-
-            <p className="experienceText">
-              Developed automated data pipelines, optimized cloud datasets,
-              improved data reliability, and delivered clean datasets for
-              analytics and business reporting.
-            </p>
-
-            <span className="experienceNumber">02</span>
-          </div>
-
-          <div className="experienceItem">
-            <div className="experienceYear">2023 — 2025</div>
-
-            <div className="experienceRole">
-              <h3>Business Analyst</h3>
-              <p>Advanced Knowledge Tech</p>
-            </div>
-
-            <p className="experienceText">
-              Translated stakeholder requirements into analytics solutions,
-              automated reporting workflows, and developed KPI dashboards to
-              support business decisions.
-            </p>
-
-            <span className="experienceNumber">03</span>
-          </div>
-        </div>
+        <ExperienceTimeline />
       </section>
             {/* PROJECTS */}
       <section className="section" id="projects">
-        <div className="sectionLabel">03 / SELECTED WORK</div>
+        <Reveal as="div" className="sectionLabel" y={14}>03 / SELECTED WORK</Reveal>
 
-        <div className="projectsHeading">
+        <Reveal as="div" className="projectsHeading">
           <h2>
             Products & projects
             <br />
@@ -220,11 +161,11 @@ export default function Home() {
             Projects combining data engineering, analytics, machine learning,
             artificial intelligence, and product development.
           </p>
-        </div>
+        </Reveal>
 
-        <div className="projectsGrid">
+        <RevealStagger as="div" className="projectsGrid" stagger={0.1}>
           {/* STOCKAI */}
-          <article className="projectCard featuredProject">
+          <TiltCard className="projectCard featuredProject" max={4}>
             <div className="projectTop">
               <span className="projectIndex">01</span>
 
@@ -303,10 +244,10 @@ export default function Home() {
                 View Case Study <span>↗</span>
               </Link>
             </div>
-          </article>
+          </TiltCard>
 
           {/* MEALPILOT */}
-          <article className="projectCard">
+          <TiltCard className="projectCard">
             <div className="projectTop">
               <span className="projectIndex">02</span>
               <span className="projectStatus">AI PRODUCT</span>
@@ -334,10 +275,10 @@ export default function Home() {
                 Explore Project <span>↗</span>
               </Link>
             </div>
-          </article>
+          </TiltCard>
 
           {/* DATA PIPELINE */}
-          <article className="projectCard">
+          <TiltCard className="projectCard">
             <div className="projectTop">
               <span className="projectIndex">03</span>
               <span className="projectStatus">DATA ENGINEERING</span>
@@ -366,10 +307,10 @@ export default function Home() {
                 Explore Project <span>↗</span>
               </Link>
             </div>
-          </article>
+          </TiltCard>
 
           {/* CAMPUS AI */}
-          <article className="projectCard">
+          <TiltCard className="projectCard">
             <div className="projectTop">
               <span className="projectIndex">04</span>
               <span className="projectStatus">GENERATIVE AI</span>
@@ -397,10 +338,10 @@ export default function Home() {
                 Explore Project <span>↗</span>
               </Link>
             </div>
-          </article>
+          </TiltCard>
 
           {/* ANALYTICS */}
-          <article className="projectCard">
+          <TiltCard className="projectCard">
             <div className="projectTop">
               <span className="projectIndex">05</span>
               <span className="projectStatus">ANALYTICS</span>
@@ -430,14 +371,14 @@ export default function Home() {
                 Explore Project <span>↗</span>
               </Link>
             </div>
-          </article>
-        </div>
+          </TiltCard>
+        </RevealStagger>
       </section>
             {/* SKILLS */}
       <section className="section" id="skills">
-        <div className="sectionLabel">04 / TOOLKIT</div>
+        <Reveal as="div" className="sectionLabel" y={14}>04 / TOOLKIT</Reveal>
 
-        <div className="skillsHeading">
+        <Reveal as="div" className="skillsHeading">
           <h2>
             Tools I use to turn
             <br />
@@ -448,133 +389,26 @@ export default function Home() {
             My toolkit spans analytics, data engineering, cloud platforms,
             databases, automation, and business intelligence.
           </p>
-        </div>
+        </Reveal>
 
-        <div className="skillsContainer">
-
-          <div className="skillCategory">
-            <div className="skillCategoryNumber">01</div>
-
-            <div>
-              <p className="skillCategoryLabel">PROGRAMMING</p>
-              <h3>Programming & Data</h3>
-            </div>
-
-            <div className="skillTags">
-              <span>Python</span>
-              <span>SQL</span>
-              <span>PySpark</span>
-              <span>Java</span>
-            </div>
-          </div>
-
-          <div className="skillCategory">
-            <div className="skillCategoryNumber">02</div>
-
-            <div>
-              <p className="skillCategoryLabel">DATA ENGINEERING</p>
-              <h3>Pipelines & Integration</h3>
-            </div>
-
-            <div className="skillTags">
-              <span>ETL / ELT</span>
-              <span>dbt</span>
-              <span>API Integration</span>
-              <span>Data Transformation</span>
-              <span>Data Validation</span>
-              <span>Apache Airflow</span>
-            </div>
-          </div>
-
-          <div className="skillCategory">
-            <div className="skillCategoryNumber">03</div>
-
-            <div>
-              <p className="skillCategoryLabel">CLOUD</p>
-              <h3>Cloud & Warehousing</h3>
-            </div>
-
-            <div className="skillTags">
-              <span>GCP</span>
-              <span>BigQuery</span>
-              <span>AWS</span>
-              <span>S3</span>
-              <span>Athena</span>
-              <span>Azure</span>
-              <span>Snowflake</span>
-              <span>Databricks</span>
-            </div>
-          </div>
-
-          <div className="skillCategory">
-            <div className="skillCategoryNumber">04</div>
-
-            <div>
-              <p className="skillCategoryLabel">ANALYTICS</p>
-              <h3>Analytics & BI</h3>
-            </div>
-
-            <div className="skillTags">
-              <span>Power BI</span>
-              <span>Tableau</span>
-              <span>Excel</span>
-              <span>KPI Dashboards</span>
-              <span>Google Analytics</span>
-            </div>
-          </div>
-
-          <div className="skillCategory">
-            <div className="skillCategoryNumber">05</div>
-
-            <div>
-              <p className="skillCategoryLabel">DATABASES</p>
-              <h3>Data Platforms</h3>
-            </div>
-
-            <div className="skillTags">
-              <span>SQL Server</span>
-              <span>PostgreSQL</span>
-              <span>MongoDB</span>
-              <span>Oracle</span>
-            </div>
-          </div>
-
-          <div className="skillCategory">
-            <div className="skillCategoryNumber">06</div>
-
-            <div>
-              <p className="skillCategoryLabel">DEVOPS</p>
-              <h3>Infrastructure & Workflow</h3>
-            </div>
-
-            <div className="skillTags">
-              <span>Terraform</span>
-              <span>CI/CD</span>
-              <span>Git</span>
-              <span>JIRA</span>
-              <span>Postman</span>
-              <span>ServiceNow</span>
-            </div>
-          </div>
-
-        </div>
+        <SkillsViz />
       </section>
 
       {/* EDUCATION */}
       <section className="section educationSection">
-        <div className="sectionLabel">05 / EDUCATION</div>
+        <Reveal as="div" className="sectionLabel" y={14}>05 / EDUCATION</Reveal>
 
-        <div className="educationHeading">
+        <Reveal as="div" className="educationHeading">
           <h2>
             Where I built my
             <br />
             <span>foundation.</span>
           </h2>
-        </div>
+        </Reveal>
 
-        <div className="educationList">
+        <RevealStagger as="div" className="educationList">
 
-          <div className="educationItem">
+          <RevealItem as="div" className="educationItem">
             <div className="educationNumber">01</div>
 
             <div>
@@ -591,9 +425,9 @@ export default function Home() {
               <strong>The University of Texas at Dallas</strong>
               <p>United States</p>
             </div>
-          </div>
+          </RevealItem>
 
-          <div className="educationItem">
+          <RevealItem as="div" className="educationItem">
             <div className="educationNumber">02</div>
 
             <div>
@@ -613,11 +447,11 @@ export default function Home() {
 
               <p>Hyderabad, India</p>
             </div>
-          </div>
+          </RevealItem>
 
-        </div>
+        </RevealStagger>
 
-        <div className="certifications">
+        <Reveal as="div" className="certifications" delay={0.1}>
           <p className="certTitle">CERTIFICATIONS</p>
 
           <div className="certGrid">
@@ -636,7 +470,7 @@ export default function Home() {
               <strong>Azure Data Fundamentals</strong>
             </div>
           </div>
-        </div>
+        </Reveal>
       </section>
             {/* CONTACT */}
       <section className="contactSection" id="contact">
@@ -649,7 +483,7 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="contactContent">
+        <Reveal as="div" className="contactContent">
           <h2>
             Have a problem
             <br />
@@ -669,9 +503,9 @@ export default function Home() {
             Start a conversation
             <span>↗</span>
           </a>
-        </div>
+        </Reveal>
 
-        <div className="contactLinks">
+        <Reveal as="div" className="contactLinks" delay={0.1}>
           <a
             href="mailto:marysyamala0707@gmail.com"
             className="contactLink"
@@ -711,7 +545,7 @@ export default function Home() {
               <b>↗</b>
             </div>
           </a>
-        </div>
+        </Reveal>
       </section>
 
       {/* FOOTER */}

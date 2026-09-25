@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function MealPilotPage() {
   return (
-    <main className="caseStudy">
+    <main id="main" className="caseStudy">
 
       {/* NAVIGATION */}
       <nav className="caseNav">
