@@ -28,7 +28,7 @@ export default function HomeHero() {
       imageAlt="Mary Syamala"
       overlayText={{ part1: "clear", part2: "data." }}
       socialLinks={socialLinks}
-      locationText="Dallas, TX"
+      locationText=""
       className="h-auto min-h-[calc(100svh-90px)]"
     />
   );

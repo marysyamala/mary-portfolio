@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 // Any icon component that accepts a className (lucide icons and custom SVGs).
@@ -187,14 +187,16 @@ export const MinimalistHero = ({
             />
           ))}
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1.3 }}
-          className="text-sm font-medium text-foreground/80"
-        >
-          {locationText}
-        </motion.div>
+        {locationText ? (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.3 }}
+            className="text-sm font-medium text-foreground/80"
+          >
+            {locationText}
+          </motion.div>
+        ) : null}
       </footer>
     </div>
   );
