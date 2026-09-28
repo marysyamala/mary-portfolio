@@ -21,7 +21,7 @@ export default function Home() {
         <Reveal as="h1" mode="mount" delay={0.15}>
           I turn data into
           <br />
-          <span>useful products.</span>
+          <span>clear decisions.</span>
         </Reveal>
 
         <Reveal
@@ -30,10 +30,10 @@ export default function Home() {
           mode="mount"
           delay={0.3}
         >
-          Hi, I&apos;m <strong>Mary Syamala</strong> — a Data Engineer,
-          Business Analyst, and AI Product Builder focused on transforming
-          complex data into reliable systems, actionable insights, and
-          intelligent products.
+          Hi, I&apos;m <strong>Mary Syamala</strong> — a data &amp; analytics
+          professional who turns complex operational and financial data into
+          reliable pipelines, clear dashboards, and insights that drive fast,
+          confident decisions.
         </Reveal>
 
         <Reveal as="div" className="heroButtons" mode="mount" delay={0.42}>
@@ -277,99 +277,83 @@ export default function Home() {
             </div>
           </TiltCard>
 
-          {/* DATA PIPELINE */}
+          {/* UTD CHATBOT */}
           <TiltCard className="projectCard">
             <div className="projectTop">
               <span className="projectIndex">03</span>
-              <span className="projectStatus">DATA ENGINEERING</span>
-            </div>
-
-            <div className="projectContent">
-              <p className="projectType">CLOUD · ETL · BIG DATA</p>
-
-              <h3>Large-Scale Data Pipeline</h3>
-
-              <p className="projectDescription">
-                A scalable cloud data pipeline for processing large
-                semi-structured datasets into optimized,
-                analytics-ready data.
-              </p>
-
-              <div className="projectTags">
-                <span>AWS</span>
-                <span>S3</span>
-                <span>Spark</span>
-                <span>Redshift</span>
-                <span>Python</span>
-              </div>
-
-              <Link className="projectLink" href="/projects/data-pipeline">
-                Explore Project <span>↗</span>
-              </Link>
-            </div>
-          </TiltCard>
-
-          {/* CAMPUS AI */}
-          <TiltCard className="projectCard">
-            <div className="projectTop">
-              <span className="projectIndex">04</span>
-              <span className="projectStatus">GENERATIVE AI</span>
+              <span className="projectStatus">ACADEMIC · UT DALLAS</span>
             </div>
 
             <div className="projectContent">
               <p className="projectType">LLM · RAG · NLP</p>
 
-              <h3>Campus AI Assistant</h3>
+              <h3>UTD Chatbot</h3>
 
               <p className="projectDescription">
-                A conversational AI assistant designed to help users discover
-                university information through natural-language interactions
-                and intelligent retrieval.
+                A UTD-focused chatbot built with LangChain, the OpenAI API, and
+                web scraping; deployed LLaMA-2-7B-Chat with prompt engineering
+                for reliable, university-specific answers.
               </p>
 
               <div className="projectTags">
-                <span>LLaMA</span>
-                <span>LLMs</span>
-                <span>RAG</span>
-                <span>Python</span>
+                <span>LangChain</span>
+                <span>OpenAI API</span>
+                <span>LLaMA-2</span>
+                <span>Web Scraping</span>
               </div>
-
-              <Link className="projectLink" href="/projects/campus-ai">
-                Explore Project <span>↗</span>
-              </Link>
             </div>
           </TiltCard>
 
-          {/* ANALYTICS */}
+          {/* STOCK MARKET PREDICTION */}
           <TiltCard className="projectCard">
             <div className="projectTop">
-              <span className="projectIndex">05</span>
-              <span className="projectStatus">ANALYTICS</span>
+              <span className="projectIndex">04</span>
+              <span className="projectStatus">ACADEMIC · BRECW</span>
             </div>
 
             <div className="projectContent">
-              <p className="projectType">
-                BUSINESS INTELLIGENCE · ANALYTICS
-              </p>
+              <p className="projectType">ML · DEEP LEARNING</p>
 
-              <h3>Business Intelligence Analytics</h3>
+              <h3>Stock Market Prediction on News Sentiments</h3>
 
               <p className="projectDescription">
-                KPI-driven analytics and reporting solutions that transform
-                operational data into clear business insights for
-                decision-makers.
+                A stock-prediction model using deep learning and time-series
+                analysis on news sentiment to explore data-driven investment
+                strategies.
               </p>
 
               <div className="projectTags">
-                <span>Power BI</span>
-                <span>SQL</span>
-                <span>DAX</span>
-                <span>Excel</span>
+                <span>Deep Learning</span>
+                <span>Time Series</span>
+                <span>NLP</span>
+                <span>Python</span>
               </div>
+            </div>
+          </TiltCard>
 
-              <Link className="projectLink" href="/projects/bi-analytics">
-                Explore Project <span>↗</span>
-              </Link>
+          {/* AUTOMATED FOOD ORDERING */}
+          <TiltCard className="projectCard">
+            <div className="projectTop">
+              <span className="projectIndex">05</span>
+              <span className="projectStatus">ACADEMIC · BRECW</span>
+            </div>
+
+            <div className="projectContent">
+              <p className="projectType">WEB APP · SYSTEMS</p>
+
+              <h3>Automated Food Ordering System</h3>
+
+              <p className="projectDescription">
+                A web-based canteen order-processing system that improved the
+                customer experience by cutting wait times and reducing long
+                queues.
+              </p>
+
+              <div className="projectTags">
+                <span>Web</span>
+                <span>Order Processing</span>
+                <span>Full-Stack</span>
+              </div>
             </div>
           </TiltCard>
         </RevealStagger>
