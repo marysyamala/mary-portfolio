@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HomeHero from "./components/HomeHero";
+import CinematicDataHero from "./components/CinematicDataHero";
 import Navbar from "./components/Navbar";
 import ExperienceTimeline from "./components/ExperienceTimeline";
 import TiltCard from "./components/TiltCard";
@@ -11,9 +11,7 @@ export default function Home() {
     <main id="main">
       <Navbar />
 
-      <section id="home">
-        <HomeHero />
-      </section>
+      <CinematicDataHero />
       {/* ABOUT */}
       <section className="section" id="about">
         <Reveal as="div" className="sectionLabel" y={14}>01 / ABOUT</Reveal>
