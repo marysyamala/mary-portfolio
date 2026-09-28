@@ -9,6 +9,13 @@
   --accent: #a3ff5f;
 }
 
+/* Register semantic tokens for Tailwind v4 utilities (bg-background, text-foreground, bg-accent) */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--text);
+  --color-accent: var(--accent);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

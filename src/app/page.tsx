@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HeroCanvas from "./components/HeroCanvas";
+import HomeHero from "./components/HomeHero";
 import Navbar from "./components/Navbar";
 import ExperienceTimeline from "./components/ExperienceTimeline";
 import TiltCard from "./components/TiltCard";
@@ -9,65 +9,10 @@ import { Reveal, RevealStagger, RevealItem } from "./components/Reveal";
 export default function Home() {
   return (
     <main id="main">
-      <HeroCanvas />
       <Navbar />
 
-      <section className="hero"  id="home">
-        <Reveal as="div" className="heroLabel" mode="mount" delay={0.05} y={16}>
-          <span className="greenDot"></span>
-          DATA · ANALYTICS · AI
-        </Reveal>
-
-        <Reveal as="h1" mode="mount" delay={0.15}>
-          I turn data into
-          <br />
-          <span>clear decisions.</span>
-        </Reveal>
-
-        <Reveal
-          as="p"
-          className="heroDescription"
-          mode="mount"
-          delay={0.3}
-        >
-          Hi, I&apos;m <strong>Mary Syamala</strong> — a data &amp; analytics
-          professional who turns complex operational and financial data into
-          reliable pipelines, clear dashboards, and insights that drive fast,
-          confident decisions.
-        </Reveal>
-
-        <Reveal as="div" className="heroButtons" mode="mount" delay={0.42}>
-          <a href="#projects" className="primaryButton">
-            Explore My Work
-            <span>→</span>
-          </a>
-
-          <a href="#about" className="secondaryButton">
-            About Me
-          </a>
-        </Reveal>
-
-        <Reveal as="div" className="heroBottom" mode="mount" delay={0.54}>
-          <div>
-            <span className="number">3+</span>
-            <span className="statLabel">Years Experience</span>
-          </div>
-
-          <div>
-            <span className="number">5+</span>
-            <span className="statLabel">Projects</span>
-          </div>
-
-          <div>
-            <span className="number">3</span>
-            <span className="statLabel">Core Disciplines</span>
-          </div>
-
-          <div className="scrollText">
-            SCROLL TO EXPLORE
-            <span>↓</span>
-          </div>
-        </Reveal>
+      <section id="home">
+        <HomeHero />
       </section>
       {/* ABOUT */}
       <section className="section" id="about">
