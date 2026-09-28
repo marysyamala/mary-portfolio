@@ -49,7 +49,7 @@ export default function Home() {
 
         <Reveal as="div" className="heroBottom" mode="mount" delay={0.54}>
           <div>
-            <span className="number">4+</span>
+            <span className="number">3+</span>
             <span className="statLabel">Years Experience</span>
           </div>
 

@@ -10,7 +10,7 @@ const ENTRIES: Entry[] = [
   {
     year: "FEB 2025 — PRESENT",
     role: "Software Engineer",
-    org: "InCom",
+    org: "InCom Technologies",
     text: "Build interactive Power BI and Tableau dashboards, design and optimize ETL workflows with validation and reconciliation, and cut data processing time by 25% with SQL and Python — partnering with stakeholders to deliver clear, actionable reporting.",
   },
   {
