@@ -2114,3 +2114,121 @@ body {
     animation: none;
   }
 }
+/* BEYOND WORK */
+
+.beyondHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+.beyondHeading h2 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1.03;
+  letter-spacing: -0.05em;
+}
+
+.beyondHeading h2 span {
+  color: var(--accent);
+}
+
+.beyondHeading > p {
+  max-width: 340px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.beyondGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.beyondCard {
+  padding: 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.beyondCard:hover {
+  border-color: rgba(163, 255, 95, 0.4);
+  transform: translateY(-4px);
+}
+
+.beyondYear {
+  color: var(--accent);
+  font-family: monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.beyondCard h3 {
+  margin-top: 14px;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+
+.beyondOrg {
+  margin-top: 4px;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.beyondText {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .beyondHeading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .beyondGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.beyondCardWide {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, rgba(163, 255, 95, 0.05), var(--surface));
+  border-color: rgba(163, 255, 95, 0.25);
+}
+
+.beyondCardWide h3 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.beyondCardWide .beyondText {
+  max-width: 720px;
+  font-size: 0.95rem;
+}
+
+.beyondChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.beyondChips span {
+  padding: 8px 12px;
+  color: #b6bcc1;
+  border: 1px solid var(--border);
+  font-size: 0.68rem;
+  transition: 0.2s ease;
+}
+
+.beyondChips span:hover {
+  color: var(--accent);
+  border-color: rgba(163, 255, 95, 0.5);
+}

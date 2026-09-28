@@ -456,10 +456,91 @@ export default function Home() {
           </div>
         </Reveal>
       </section>
+
+      {/* BEYOND WORK */}
+      <section className="section" id="beyond">
+        <Reveal as="div" className="sectionLabel" y={14}>06 / BEYOND WORK</Reveal>
+
+        <Reveal as="div" className="beyondHeading">
+          <h2>
+            Competitive cricketer,
+            <br />
+            <span>builder &amp; leader.</span>
+          </h2>
+
+          <p>
+            Off the clock I&apos;ve played competitive cricket from district to
+            national level and now in the USA, founded a photography brand, led
+            campus clubs, and volunteered in my community.
+          </p>
+        </Reveal>
+
+        <RevealStagger as="div" className="beyondGrid" stagger={0.08}>
+          <RevealItem as="div" className="beyondCard beyondCardWide">
+            <span className="beyondYear">
+              COMPETITIVE CRICKET · DISTRICT → STATE → NATIONAL → USA
+            </span>
+            <h3>Women&apos;s Cricket</h3>
+            <p className="beyondText">
+              A competitive women&apos;s cricketer across district, state, and
+              national levels in India — now playing in the United States,
+              representing Dallas in the North West Conference.
+            </p>
+            <div className="beyondChips">
+              <span>Telangana U-19 — 62nd National School Games (SGFI, 2016)</span>
+              <span>Ranga Reddy District — Hyderabad Cricket Association</span>
+              <span>WCAI Nationals — Guru Har Rai Academy Cup, Kanpur</span>
+              <span>All-India T20 — Late Shri Chimanbhai Patel Cup, Hyderabad</span>
+              <span>Eenadu Champion Cricket Cup 2018 — Winner / Runner-up</span>
+              <span>USA Cricket — Dallas · North West Conference</span>
+            </div>
+          </RevealItem>
+
+          <RevealItem as="div" className="beyondCard">
+            <span className="beyondYear">2019 — PRESENT</span>
+            <h3>Founder</h3>
+            <p className="beyondOrg">myclicks_c Photography</p>
+            <p className="beyondText">
+              Grew a photography brand to 100+ clients — running marketing,
+              client engagement, and end-to-end delivery.
+            </p>
+          </RevealItem>
+
+          <RevealItem as="div" className="beyondCard">
+            <span className="beyondYear">2018 — 2020</span>
+            <h3>President</h3>
+            <p className="beyondOrg">Photography Club, BRECW</p>
+            <p className="beyondText">
+              Led the club, organized events and shoots, and grew an active
+              creative community on campus.
+            </p>
+          </RevealItem>
+
+          <RevealItem as="div" className="beyondCard">
+            <span className="beyondYear">2019 — 2021</span>
+            <h3>President</h3>
+            <p className="beyondOrg">Sports Club, BRECW</p>
+            <p className="beyondText">
+              Organized and led sports programs and events across the college.
+            </p>
+          </RevealItem>
+
+          <RevealItem as="div" className="beyondCard">
+            <span className="beyondYear">VOLUNTEER</span>
+            <h3>Amma Foundation</h3>
+            <p className="beyondOrg">Community Service</p>
+            <p className="beyondText">
+              Volunteered to serve underprivileged communities through outreach
+              and care initiatives.
+            </p>
+          </RevealItem>
+        </RevealStagger>
+      </section>
+
             {/* CONTACT */}
       <section className="contactSection" id="contact">
         <div className="contactTop">
-          <div className="sectionLabel">06 / CONTACT</div>
+          <div className="sectionLabel">07 / CONTACT</div>
 
           <span className="availability">
             <i></i>
