@@ -8,22 +8,22 @@ type Entry = { year: string; role: string; org: string; text: string };
 
 const ENTRIES: Entry[] = [
   {
-    year: "2026 — PRESENT",
-    role: "Data Engineer",
-    org: "Symplore",
-    text: "Building ETL/ELT pipelines, API integrations, SQL and Python transformations, data-quality processes, and analytics-ready datasets across cloud data environments.",
+    year: "FEB 2025 — PRESENT",
+    role: "Software Engineer",
+    org: "InCom",
+    text: "Build interactive Power BI and Tableau dashboards, design and optimize ETL workflows with validation and reconciliation, and cut data processing time by 25% with SQL and Python — partnering with stakeholders to deliver clear, actionable reporting.",
   },
   {
-    year: "2025 — 2026",
-    role: "Data Engineer",
-    org: "Tech Intuition",
-    text: "Developed automated data pipelines, optimized cloud datasets, improved data reliability, and delivered clean datasets for analytics and business reporting.",
-  },
-  {
-    year: "2023 — 2025",
-    role: "Business Analyst",
+    year: "OCT 2023 — JAN 2025",
+    role: "Data Analyst",
     org: "Advanced Knowledge Tech",
-    text: "Translated stakeholder requirements into analytics solutions, automated reporting workflows, and developed KPI dashboards to support business decisions.",
+    text: "Translated stakeholder requirements into BRDs and dashboards, ran SQL/Excel trend and cost analysis supporting 10% cost-reduction initiatives, and automated validation and ETL to reduce manual reporting by 40%.",
+  },
+  {
+    year: "JAN 2020 — MAY 2022",
+    role: "Junior Data Analyst",
+    org: "DXC Technology",
+    text: "Extracted, cleaned, and reported on high-volume operational and vendor data (~100K records/day) with SQL, Python, and Excel; built dashboards and validated ETL pipelines for accurate, reporting-ready data.",
   },
 ];
 
