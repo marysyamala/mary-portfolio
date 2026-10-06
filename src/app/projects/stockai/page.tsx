@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import StockAIArchitecture from "../../components/StockAIArchitecture";
+
+export const metadata: Metadata = {
+  title: "AKSYTAI — Real-time Market Intelligence | Mary Syamala",
+  description:
+    "AKSYTAI (Symplore) — a real-time market-intelligence platform: live news ingestion, FinBERT sentiment, and evidence-grounded RAG/GenAI via FastAPI on AWS.",
+};
 
 export default function StockAIPage() {
   return (
@@ -20,24 +27,25 @@ export default function StockAIPage() {
       <section className="caseHero">
 
         <div className="caseEyebrow">
-          FEATURED PROJECT / AI · FINANCE · DATA
+          SYMPLORE INC. / GENAI · NLP · MARKET INTELLIGENCE
         </div>
 
         <h1>
-          Stock<span>AI</span>
+          AKSYT<span>AI</span>
         </h1>
 
         <p className="caseTagline">
-          Building an intelligent system that connects market data,
-          technical patterns, financial events, and news to better
-          understand stock-price movement.
+          A real-time U.S. market-intelligence platform that ingests live
+          news, scores FinBERT sentiment, and serves evidence-grounded
+          GenAI/RAG workflows via FastAPI — for equity research and
+          monitoring.
         </p>
 
         <div className="caseMeta">
 
           <div>
             <span>PROJECT TYPE</span>
-            <strong>AI Product</strong>
+            <strong>GenAI Platform</strong>
           </div>
 
           <div>
@@ -47,14 +55,14 @@ export default function StockAIPage() {
 
           <div>
             <span>ROLE</span>
-            <strong>Product · Data · ML</strong>
+            <strong>GenAI Engineer</strong>
           </div>
 
           <div>
             <span>STATUS</span>
             <strong className="activeStatus">
               <i></i>
-              In Development
+              In Production
             </strong>
           </div>
 
@@ -78,25 +86,28 @@ export default function StockAIPage() {
           <div className="caseText">
 
             <p className="caseLead">
-              StockAI is an AI-powered stock intelligence platform designed
-              to bring multiple market signals into one analytical system.
+              AKSYTAI is a real-time market-intelligence platform (built at
+              Symplore) that brings live news, sentiment, and market signals
+              into one evidence-grounded system.
             </p>
 
             <p>
               Financial markets generate enormous amounts of information:
               historical prices, trading volume, technical indicators,
-              company events, quarterly results, and news.
+              company events, quarterly results, and a constant stream of
+              news.
             </p>
 
             <p>
               Looking at these signals independently makes it difficult to
-              understand why a stock moved or whether similar patterns have
-              occurred before.
+              understand why a stock moved — or to trust an automated answer
+              about it.
             </p>
 
             <p>
-              StockAI is being designed to connect these signals into a
-              structured data and machine-learning pipeline.
+              AKSYTAI connects these signals through structured, point-in-time
+              data pipelines, FinBERT sentiment, and retrieval-augmented
+              GenAI — surfacing what&apos;s happening and why, with citations.
             </p>
 
           </div>
@@ -254,10 +265,12 @@ export default function StockAIPage() {
 
           <p>
             The evidence pointed to a more useful product. Instead of
-            forecasting prices, StockAI pivoted toward real-time news
-            intelligence — surfacing and contextualizing market-moving news
-            and sentiment so people can understand what is happening and
-            why, without a false promise of prediction.
+            forecasting prices, AKSYTAI pivoted toward real-time news
+            intelligence — a retrieval-augmented (RAG) GenAI layer that
+            surfaces and contextualizes market-moving news and sentiment with
+            citations, numeric validation, and guardrails against
+            hallucination and prompt injection, rather than a false promise
+            of prediction.
           </p>
 
         </div>
@@ -267,51 +280,51 @@ export default function StockAIPage() {
       {/* DATA */}
       <section className="caseSection">
 
-        <div className="caseSectionNumber">06 / DATA & FEATURES</div>
+        <div className="caseSectionNumber">06 / DATA & PIPELINE</div>
 
         <div className="caseTwoColumn">
 
           <h2>
-            Turning raw markets
+            Reliable data,
             <br />
-            into <span>features.</span>
+            built <span>point-in-time.</span>
           </h2>
 
           <div className="featureList">
 
             <div>
               <span>01</span>
-              <p>Open, High, Low, Close &amp; Volume</p>
+              <p>~95K news articles (2015–2026) ingested &amp; cleaned</p>
             </div>
 
             <div>
               <span>02</span>
-              <p>Historical Returns</p>
+              <p>FinBERT sentiment scored across 61K+ articles</p>
             </div>
 
             <div>
               <span>03</span>
-              <p>Price Momentum</p>
+              <p>Deduplication, relevance &amp; entity/ticker mapping</p>
             </div>
 
             <div>
               <span>04</span>
-              <p>Volatility Signals</p>
+              <p>FastAPI REST &amp; WebSocket ingestion, Parquet processing</p>
             </div>
 
             <div>
               <span>05</span>
-              <p>Technical Indicators</p>
+              <p>Point-in-time prices, calendars &amp; corporate events</p>
             </div>
 
             <div>
               <span>06</span>
-              <p>News &amp; Event Signals</p>
+              <p>Lineage, leakage controls, quarantine &amp; idempotent runs</p>
             </div>
 
             <div>
               <span>07</span>
-              <p>Quarterly / Earnings Context</p>
+              <p>PostgreSQL + pgvector serving for embeddings &amp; RAG</p>
             </div>
 
           </div>
@@ -339,28 +352,38 @@ export default function StockAIPage() {
           </div>
 
           <div>
-            <span>DATA</span>
-            <strong>Pandas</strong>
-          </div>
-
-          <div>
             <span>API</span>
             <strong>FastAPI</strong>
           </div>
 
           <div>
-            <span>FRONTEND</span>
-            <strong>Next.js</strong>
+            <span>NLP</span>
+            <strong>FinBERT</strong>
+          </div>
+
+          <div>
+            <span>GENAI</span>
+            <strong>LangChain / RAG</strong>
           </div>
 
           <div>
             <span>ML</span>
-            <strong>Machine Learning</strong>
+            <strong>LightGBM</strong>
           </div>
 
           <div>
-            <span>INTELLIGENCE</span>
-            <strong>NLP / Sentiment</strong>
+            <span>DATA</span>
+            <strong>PostgreSQL + pgvector</strong>
+          </div>
+
+          <div>
+            <span>CLOUD</span>
+            <strong>AWS ECS Fargate</strong>
+          </div>
+
+          <div>
+            <span>CI/CD</span>
+            <strong>GitHub Actions</strong>
           </div>
 
         </div>
@@ -373,14 +396,15 @@ export default function StockAIPage() {
         <span>PROJECT 01</span>
 
         <h2>
-          StockAI is still
+          AKSYTAI keeps
           <br />
           <em>evolving.</em>
         </h2>
 
         <p>
-          The platform is being developed iteratively as additional market,
-          event, news, and modeling capabilities are introduced.
+          The platform ships iteratively on AWS — expanding news coverage,
+          sentiment and event analytics, RAG workflows, and model evaluation
+          with leakage-safe, point-in-time rigor.
         </p>
 
         <Link href="/#projects">

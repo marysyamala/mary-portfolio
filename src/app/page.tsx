@@ -120,7 +120,7 @@ export default function Home() {
             <div className="stockVisual">
               <div className="stockVisualHeader">
                 <div>
-                  <span>STOCKAI / INTELLIGENCE</span>
+                  <span>AKSYTAI / INTELLIGENCE</span>
                   <strong>Market Signal Engine</strong>
                 </div>
 
@@ -162,25 +162,25 @@ export default function Home() {
 
             <div className="projectContent">
               <p className="projectType">
-                AI · FINANCE · MACHINE LEARNING
+                GENAI · NLP · MARKET INTELLIGENCE
               </p>
 
-              <h3>StockAI</h3>
+              <h3>AKSYTAI</h3>
 
               <p className="projectDescription">
-                An AI-powered stock intelligence platform combining historical
-                market data, technical indicators, news sentiment, earnings
-                events, and machine learning to identify market patterns and
-                generate explainable stock insights.
+                A real-time market-intelligence platform (Symplore) that
+                ingests live news, scores FinBERT sentiment, and serves
+                evidence-grounded RAG/GenAI workflows via FastAPI on
+                point-in-time data pipelines deployed across AWS.
               </p>
 
               <div className="projectTags">
                 <span>Python</span>
                 <span>FastAPI</span>
-                <span>Next.js</span>
-                <span>Machine Learning</span>
-                <span>NLP</span>
-                <span>OHLCV</span>
+                <span>FinBERT</span>
+                <span>RAG</span>
+                <span>pgvector</span>
+                <span>AWS</span>
               </div>
 
               <Link className="projectLink" href="/projects/stockai">

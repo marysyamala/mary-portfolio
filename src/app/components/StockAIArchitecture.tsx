@@ -35,7 +35,7 @@ function FlowLine({ children }: { children?: ReactNode }) {
  */
 export default function StockAIArchitecture() {
   return (
-    <div className="arch" role="img" aria-label="StockAI architecture: market data through feature engineering and ML research, and financial news through FinBERT to sentiment features, both feeding evaluation, then FastAPI and Next.js serving market intelligence.">
+    <div className="arch" role="img" aria-label="AKSYTAI architecture: market data through feature engineering and ML research, and financial news through FinBERT to sentiment features, both feeding evaluation, then FastAPI and RAG with pgvector serving real-time market intelligence.">
       <div className="archPhase">
         <span className="archPhaseLabel">01 — RESEARCH PIPELINE</span>
 
@@ -87,9 +87,9 @@ export default function StockAIArchitecture() {
       <div className="archPhase">
         <span className="archPhaseLabel">02 — PRODUCT · SERVING</span>
 
-        <ArchNode kind="API" name="FastAPI" meta="Service layer" />
+        <ArchNode kind="API" name="FastAPI" meta="REST + WebSocket" />
         <FlowLine />
-        <ArchNode kind="FRONTEND" name="Next.js" meta="Interface" />
+        <ArchNode kind="RETRIEVAL" name="RAG + pgvector" meta="Grounded, cited" />
         <FlowLine />
         <ArchNode
           kind="OUTPUT"
