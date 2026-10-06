@@ -8,22 +8,28 @@ type Entry = { year: string; role: string; org: string; text: string };
 
 const ENTRIES: Entry[] = [
   {
-    year: "FEB 2025 — PRESENT",
-    role: "Software Engineer",
+    year: "SEP 2026 — PRESENT",
+    role: "GenAI Engineer",
+    org: "Symplore Inc.",
+    text: "Leading a real-time U.S. market-intelligence platform — ingesting live news, scoring FinBERT NLP sentiment, and serving evidence-grounded RAG/GenAI workflows via FastAPI. Building point-in-time pipelines with leakage controls and deploying on AWS (ECS Fargate, pgvector) with GitHub Actions CI/CD.",
+  },
+  {
+    year: "FEB 2025 — AUG 2026",
+    role: "AI Data Engineer",
     org: "InCom Technologies",
-    text: "Build interactive Power BI and Tableau dashboards, design and optimize ETL workflows with validation and reconciliation, and cut data processing time by 25% with SQL and Python — partnering with stakeholders to deliver clear, actionable reporting.",
+    text: "Built ETL/ELT pipelines preparing AI-ready structured and semi-structured data for ML models and analytics — cutting processing time by 25% with Python, SQL, and API automation, and adding validation, reconciliation, and quality checks for reliable training data.",
   },
   {
     year: "OCT 2023 — JAN 2025",
     role: "Data Analyst",
     org: "Advanced Knowledge Tech",
-    text: "Translated stakeholder requirements into BRDs and dashboards, ran SQL/Excel trend and cost analysis supporting 10% cost-reduction initiatives, and automated validation and ETL to reduce manual reporting by 40%.",
+    text: "Automated ETL, validation, and audit workflows (40% less manual reporting), built data-profiling/quality frameworks, and analyzed large operational and financial datasets to drive a 10% cost reduction. Designed Power BI dashboards that cut issue-detection time by 30%.",
   },
   {
-    year: "JAN 2020 — MAY 2022",
+    year: "MAR 2021 — MAY 2022",
     role: "Junior Data Analyst",
     org: "DXC Technology",
-    text: "Extracted, cleaned, and reported on high-volume operational and vendor data (~100K records/day) with SQL, Python, and Excel; built dashboards and validated ETL pipelines for accurate, reporting-ready data.",
+    text: "Processed and analyzed 100K+ records/day with SQL, Python, and Excel; built and validated ETL pipelines with automated quality checks, and delivered interactive Power BI/Tableau dashboards for operational, vendor, and financial reporting.",
   },
 ];
 

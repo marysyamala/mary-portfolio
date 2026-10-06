@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 const SITE_ORIGIN = "https://marysyamala.github.io";
 const SITE_URL = "https://marysyamala.github.io/mary-portfolio";
 const OG_IMAGE = "/mary-portfolio/opengraph.png";
-const SITE_TITLE = "Mary Syamala | Data Engineer & Analytics";
+const SITE_TITLE = "Mary Syamala | GenAI & AI/ML Engineer";
 const SITE_DESCRIPTION =
-  "Portfolio of Mary Syamala — Data Engineer, Data Analyst, and AI Product Builder specializing in data engineering, analytics, cloud platforms, and AI-powered products.";
+  "Portfolio of Mary Syamala — GenAI Engineer specializing in LLMs, NLP (FinBERT), RAG and evidence-grounded generation, machine learning, and scalable data pipelines on AWS.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),

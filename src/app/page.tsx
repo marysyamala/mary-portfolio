@@ -27,28 +27,28 @@ export default function Home() {
 
           <Reveal as="div" className="aboutContent" delay={0.1}>
             <p className="aboutLead">
-              I&apos;m a data professional who enjoys working at the
-              intersection of <strong>data, business, and technology.</strong>
+              I&apos;m a <strong>GenAI Engineer</strong> working at the
+              intersection of <strong>AI/ML, NLP, and data engineering.</strong>
             </p>
 
             <p>
-              With experience across data engineering and business analytics,
-              I&apos;ve worked on transforming raw information into reliable
-              datasets, automated pipelines, dashboards, and actionable
-              business insights.
+              I build real-time AI products — most recently a market-intelligence
+              platform that ingests live news, scores FinBERT sentiment, and
+              serves evidence-grounded RAG/GenAI workflows via FastAPI — all on
+              reliable, point-in-time data pipelines.
             </p>
 
             <p>
               I hold a Master&apos;s in Business Analytics &amp; Artificial
-              Intelligence from The University of Texas at Dallas. Today,
-              I&apos;m expanding that foundation by building AI-powered
-              products that solve practical problems.
+              Intelligence from The University of Texas at Dallas, and pair
+              strong data-engineering foundations with LLMs, model evaluation,
+              and MLOps to ship AI you can trust.
             </p>
 
             <div className="aboutDetails">
               <div>
                 <span>FOCUS</span>
-                <p>Data · Analytics · AI</p>
+                <p>GenAI · AI/ML · NLP</p>
               </div>
 
               <div>
@@ -58,12 +58,12 @@ export default function Home() {
 
               <div>
                 <span>BASED IN</span>
-                <p>United States</p>
+                <p>Michigan, USA</p>
               </div>
 
               <div>
                 <span>OPEN TO</span>
-                <p>Data &amp; Analytics Opportunities</p>
+                <p>GenAI / AI &amp; ML Roles</p>
               </div>
             </div>
           </Reveal>
@@ -541,6 +541,20 @@ export default function Home() {
           </a>
 
           <a
+            href="https://github.com/marysyamala"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contactLink"
+          >
+            <span>GITHUB</span>
+
+            <div>
+              View my code
+              <b>↗</b>
+            </div>
+          </a>
+
+          <a
             href="/mary-portfolio/Mary_Syamala_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -563,7 +577,7 @@ export default function Home() {
             MS<span>.</span>
           </a>
 
-          <p>Data · Analytics · AI</p>
+          <p>GenAI · AI/ML · NLP</p>
         </div>
 
         <p className="footerText">

@@ -179,18 +179,19 @@ export default function CinematicDataHero() {
         <div className="cdh-intro">
           <div className="flex items-center justify-center gap-2 text-[0.72rem] font-bold tracking-[0.17em] text-[color:var(--accent)]">
             <span className="inline-block h-2 w-2 rounded-full bg-[color:var(--accent)] shadow-[0_0_10px_var(--accent)]" />
-            DATA · ANALYTICS · AI
+            GENAI · AI/ML · NLP
           </div>
 
           <h1 className="mx-auto mt-6 max-w-4xl text-[clamp(2.6rem,6.5vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.05em] text-[color:var(--text)]">
-            Turn raw data into{" "}
-            <span className="text-[color:var(--accent)]">clear decisions.</span>
+            Turn data into{" "}
+            <span className="text-[color:var(--accent)]">intelligent decisions.</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-[1.05rem] leading-relaxed text-[color:var(--muted)]">
             I&apos;m <strong className="text-[color:var(--text)]">Mary Syamala</strong>{" "}
-            — a data &amp; analytics professional building reliable pipelines,
-            clear dashboards, and AI-driven insight.
+            — a GenAI Engineer building real-time AI products: news-driven market
+            intelligence, FinBERT NLP, and evidence-grounded RAG on scalable data
+            pipelines.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
