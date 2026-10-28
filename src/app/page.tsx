@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CinematicDataHero from "./components/CinematicDataHero";
+import ToolsMarquee from "./components/ToolsMarquee";
 import Navbar from "./components/Navbar";
 import ExperienceTimeline from "./components/ExperienceTimeline";
 import TiltCard from "./components/TiltCard";
@@ -12,6 +13,8 @@ export default function Home() {
       <Navbar />
 
       <CinematicDataHero />
+
+      <ToolsMarquee />
       {/* ABOUT */}
       <section className="section" id="about">
         <Reveal as="div" className="sectionLabel" y={14}>01 / ABOUT</Reveal>
@@ -27,28 +30,29 @@ export default function Home() {
 
           <Reveal as="div" className="aboutContent" delay={0.1}>
             <p className="aboutLead">
-              I&apos;m a <strong>GenAI Engineer</strong> working at the
-              intersection of <strong>AI/ML, NLP, and data engineering.</strong>
+              I&apos;m a <strong>Business &amp; Data Analyst</strong> with 3+ years
+              turning complex data into <strong>actionable insights, better
+              processes, and AI-powered solutions.</strong>
             </p>
 
             <p>
-              I build real-time AI products — most recently a market-intelligence
-              platform that ingests live news, scores FinBERT sentiment, and
-              serves evidence-grounded RAG/GenAI workflows via FastAPI — all on
-              reliable, point-in-time data pipelines.
+              I work across the full data lifecycle — gathering requirements,
+              validating data quality, automating SQL/Python/API workflows, and
+              building Power BI &amp; Tableau dashboards that help stakeholders
+              make confident, data-driven decisions.
             </p>
 
             <p>
               I hold a Master&apos;s in Business Analytics &amp; Artificial
-              Intelligence from The University of Texas at Dallas, and pair
-              strong data-engineering foundations with LLMs, model evaluation,
-              and MLOps to ship AI you can trust.
+              Intelligence from The University of Texas at Dallas, and pair strong
+              analytics foundations with NLP (FinBERT), LLMs, and evidence-grounded
+              AI to build solutions you can trust.
             </p>
 
             <div className="aboutDetails">
               <div>
                 <span>FOCUS</span>
-                <p>GenAI · AI/ML · NLP</p>
+                <p>Data Analytics · BI · AI</p>
               </div>
 
               <div>
@@ -63,7 +67,7 @@ export default function Home() {
 
               <div>
                 <span>OPEN TO</span>
-                <p>GenAI / AI &amp; ML Roles</p>
+                <p>Data &amp; Business Analyst Roles</p>
               </div>
             </div>
           </Reveal>
@@ -577,7 +581,7 @@ export default function Home() {
             MS<span>.</span>
           </a>
 
-          <p>GenAI · AI/ML · NLP</p>
+          <p>Data Analytics · BI · AI</p>
         </div>
 
         <p className="footerText">

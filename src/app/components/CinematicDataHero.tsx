@@ -16,6 +16,26 @@ const STYLES = `
     align-items: center;
     overflow: hidden;
   }
+  /* Aurora glow — slow-drifting coloured light behind the scene */
+  .cdh-aurora {
+    position: absolute; inset: -20% -10%; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(42% 46% at 22% 28%, rgba(163,255,95,0.16), transparent 60%),
+      radial-gradient(38% 42% at 82% 22%, rgba(80,180,255,0.12), transparent 62%),
+      radial-gradient(50% 50% at 60% 85%, rgba(163,255,95,0.10), transparent 65%);
+    filter: blur(14px);
+    animation: cdhDrift 18s ease-in-out infinite alternate;
+  }
+  @keyframes cdhDrift {
+    0%   { transform: translate3d(-2%, -1%, 0) scale(1); }
+    100% { transform: translate3d(3%, 2%, 0) scale(1.08); }
+  }
+  /* Film grain — faint static texture for cinematic depth */
+  .cdh-grain {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    opacity: 0.06; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
   .cdh-grid {
     position: absolute; inset: 0; z-index: 0; pointer-events: none;
     background-size: 60px 60px;
@@ -24,6 +44,22 @@ const STYLES = `
       linear-gradient(to bottom, rgba(163,255,95,0.05) 1px, transparent 1px);
     mask-image: radial-gradient(ellipse at 50% 55%, black 0%, transparent 70%);
     -webkit-mask-image: radial-gradient(ellipse at 50% 55%, black 0%, transparent 70%);
+  }
+
+  /* Primary CTA shine sweep */
+  .cdh-cta { position: relative; overflow: hidden; }
+  .cdh-cta::after {
+    content: ""; position: absolute; top: 0; left: -120%;
+    width: 60%; height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,0.55), transparent);
+    transform: skewX(-18deg);
+    transition: left 0.6s ease;
+  }
+  .cdh-cta:hover::after { left: 140%; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cdh-aurora { animation: none; }
+    .cdh-cta::after { display: none; }
   }
 
   /* Laptop mockup */
@@ -172,14 +208,16 @@ export default function CinematicDataHero() {
   return (
     <section ref={root} id="home" className="cdh" aria-label="Intro">
       <style dangerouslySetInnerHTML={{ __html: STYLES }} />
+      <div className="cdh-aurora" aria-hidden="true" />
       <div className="cdh-grid" aria-hidden="true" />
+      <div className="cdh-grain" aria-hidden="true" />
 
-      <div className="mx-auto flex w-[min(1100px,90%)] flex-col items-center gap-12 py-16 text-center">
+      <div className="relative z-10 mx-auto flex w-[min(1100px,90%)] flex-col items-center gap-12 py-16 text-center">
         {/* Headline + CTAs */}
         <div className="cdh-intro">
           <div className="flex items-center justify-center gap-2 text-[0.72rem] font-bold tracking-[0.17em] text-[color:var(--accent)]">
             <span className="inline-block h-2 w-2 rounded-full bg-[color:var(--accent)] shadow-[0_0_10px_var(--accent)]" />
-            GENAI · AI/ML · NLP
+            DATA ANALYTICS · BUSINESS INTELLIGENCE · AI
           </div>
 
           <h1 className="mx-auto mt-6 max-w-4xl text-[clamp(2.6rem,6.5vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.05em] text-[color:var(--text)]">
@@ -189,15 +227,15 @@ export default function CinematicDataHero() {
 
           <p className="mx-auto mt-6 max-w-xl text-[1.05rem] leading-relaxed text-[color:var(--muted)]">
             I&apos;m <strong className="text-[color:var(--text)]">Mary Syamala</strong>{" "}
-            — a GenAI Engineer building real-time AI products: news-driven market
-            intelligence, FinBERT NLP, and evidence-grounded RAG on scalable data
-            pipelines.
+            — a Business &amp; Data Analyst turning complex data into actionable
+            insights, and building AI-powered solutions with FinBERT NLP, SQL,
+            Python, and BI dashboards.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href="#projects"
-              className="inline-flex items-center gap-3 rounded bg-[color:var(--accent)] px-6 py-3.5 text-sm font-bold text-[#081006] transition-transform hover:-translate-y-0.5"
+              className="cdh-cta inline-flex items-center gap-3 rounded bg-[color:var(--accent)] px-6 py-3.5 text-sm font-bold text-[#081006] transition-transform hover:-translate-y-0.5"
             >
               View My Work <span aria-hidden="true">→</span>
             </a>

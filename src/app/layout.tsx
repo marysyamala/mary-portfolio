@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 const SITE_ORIGIN = "https://marysyamala.github.io";
 const SITE_URL = "https://marysyamala.github.io/mary-portfolio";
 const OG_IMAGE = "/mary-portfolio/opengraph.png";
-const SITE_TITLE = "Mary Syamala | GenAI & AI/ML Engineer";
+const SITE_TITLE = "Mary Syamala | Business & Data Analyst";
 const SITE_DESCRIPTION =
-  "Portfolio of Mary Syamala — GenAI Engineer specializing in LLMs, NLP (FinBERT), RAG and evidence-grounded generation, machine learning, and scalable data pipelines on AWS.";
+  "Portfolio of Mary Syamala — Business & Data Analyst with 3+ years turning complex data into actionable insights. SQL, Python, Power BI & Tableau, data quality, and AI-powered solutions (FinBERT NLP, LLMs).";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Mary Syamala — Data Engineer, Business Analyst & AI Product Builder",
+        alt: "Mary Syamala — Business & Data Analyst",
       },
     ],
   },

@@ -8,28 +8,22 @@ type Entry = { year: string; role: string; org: string; text: string };
 
 const ENTRIES: Entry[] = [
   {
-    year: "SEP 2026 — PRESENT",
-    role: "GenAI Engineer",
-    org: "Symplore Inc.",
-    text: "Leading a real-time U.S. market-intelligence platform — ingesting live news, scoring FinBERT NLP sentiment, and serving evidence-grounded RAG/GenAI workflows via FastAPI. Building point-in-time pipelines with leakage controls and deploying on AWS (ECS Fargate, pgvector) with GitHub Actions CI/CD.",
-  },
-  {
-    year: "FEB 2025 — AUG 2026",
-    role: "AI Data Engineer",
+    year: "FEB 2025 — PRESENT",
+    role: "Business Analyst",
     org: "InCom Technologies",
-    text: "Built ETL/ELT pipelines preparing AI-ready structured and semi-structured data for ML models and analytics — cutting processing time by 25% with Python, SQL, and API automation, and adding validation, reconciliation, and quality checks for reliable training data.",
+    text: "Independently built a financial-intelligence platform integrating FinBERT sentiment, financial news, and market data — evaluating analytical outputs against business rules for accuracy, relevance, and consistency. Designed interactive Power BI and Tableau dashboards to track KPIs, and automated SQL, Python, and API workflows, cutting processing time by 25%.",
   },
   {
     year: "OCT 2023 — JAN 2025",
     role: "Data Analyst",
     org: "Advanced Knowledge Tech",
-    text: "Automated ETL, validation, and audit workflows (40% less manual reporting), built data-profiling/quality frameworks, and analyzed large operational and financial datasets to drive a 10% cost reduction. Designed Power BI dashboards that cut issue-detection time by 30%.",
+    text: "Partnered with cross-functional stakeholders to translate objectives into BRDs and functional specs, and built Power BI dashboards that cut issue-detection time by 30%. Ran data profiling, quality assessments, and business-rule validation, and automated ETL, reconciliation, and validation workflows — reducing manual reporting effort by 40%.",
   },
   {
-    year: "MAR 2021 — MAY 2022",
-    role: "Junior Data Analyst",
+    year: "JAN 2021 — MAY 2022",
+    role: "Junior Business Analyst",
     org: "DXC Technology",
-    text: "Processed and analyzed 100K+ records/day with SQL, Python, and Excel; built and validated ETL pipelines with automated quality checks, and delivered interactive Power BI/Tableau dashboards for operational, vendor, and financial reporting.",
+    text: "Analyzed and validated 100K+ daily records with SQL, Python, and Excel, running accuracy, completeness, and consistency checks for reliable reporting. Gathered business requirements across finance, operations, and technical teams, and delivered interactive Power BI and Tableau dashboards to monitor KPIs, financial trends, and operational performance.",
   },
 ];
 
